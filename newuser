@@ -1,0 +1,30 @@
+import os, sys, time
+c4 = "\033[1;36;40m"
+c6 = "\033[1;31;40m" #Rojo
+print(f"""{c6}
+
+▒█▀▀▀█ █▀▀█ █░░ █░░█ █▀▀▄ █▀▀█ █▀▀ 
+░▀▀▀▄▄ █▄▄█ █░░ █░░█ █░░█ █░░█ ▀▀█ 
+▒█▄▄▄█ ▀░░▀ ▀▀▀ ░▀▀▀ ▀▀▀░ ▀▀▀▀ ▀▀▀ 
+
+█▀▀ █▀▀█ █▀▄▀█ █▀▀ █░░█ █▀▀▄ █▀▀▀ 
+▀▀█ █▄▄█ █░▀░█ ▀▀█ █░░█ █░░█ █░▀█ 
+▀▀▀ ▀░░▀ ▀░░░▀ ▀▀▀ ░▀▀▀ ▀░░▀ ▀▀▀▀""")
+
+def us(s):
+   for c in s:
+      sys.stdout.write(c)
+      sys.stdout.flush()
+      time.sleep(3./200)
+print (c4)
+print("""
+1) Si
+2) No""")
+ve = "\033[1;32;40m"
+us(f"{ve}¿Eres nuevo usando este sscript\n>>>")
+a0=int(input(" "))
+if a0 == 1:
+   name=input("Username:")
+   os.system("pip install sympy")
+   os.system("touch user")
+   os.system(f"echo {name} > user")
